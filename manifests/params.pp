@@ -1,4 +1,4 @@
-# == Class statsd::params
+# == Class: statsd::params
 class statsd::params {
   $ensure                            = 'present'
   $node_module_dir                   = '/usr/lib/node_modules'
@@ -25,7 +25,7 @@ class statsd::params {
   $graphite_prefixTimer              = 'timers'
   $graphite_prefixGauge              = 'gauges'
   $graphite_prefixSet                = 'sets'
-  $graphite_globalSuffix             = ''
+  $graphite_globalSuffix             = undef
 
   $influxdb_host                     = undef
   $influxdb_port                     = '8086'
